@@ -40,7 +40,7 @@ clockE.addEventListener('animationend', () => {
     clockE.classList.add('animate__tada');
 });
 
-const hovered = async (element) => {
+const hovered = (element) => {
     if (element.classList.contains('animate__tada') == true) element.classList.remove('animate__tada');
 
     element.classList.add('animate__wobble');
