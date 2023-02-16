@@ -39,3 +39,12 @@ clockE.addEventListener('animationend', () => {
     clockE.classList.remove('animate__backInUp');
     clockE.classList.add('animate__tada');
 });
+
+const hovered = async (element) => {
+    if (element.classList.contains('animate__tada') == true) element.classList.remove('animate__tada');
+
+    element.classList.add('animate__wobble');
+    element.addEventListener('animationend', () => {
+        element.classList.remove('animate__wobble');
+    });
+}
