@@ -9,7 +9,7 @@ let clock = () => {
     let s = new Date().getSeconds();
     let am = 'AM'
 
-    if (h > 12) {
+    if (h >= 12) {
         h -= 12;
         am = 'PM';
     }
